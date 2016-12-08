@@ -18,6 +18,8 @@ body {
       body .navbar-default .navbar-brand img {
         max-height: 26px;
         margin-top: -4px; }
+  body .panel-group ul {
+    list-style-type: none !important; }
 
 @media (max-width: 768px) {
   .container {

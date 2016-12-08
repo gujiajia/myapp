@@ -24,6 +24,11 @@ body {
             }
         }
     }
+    .panel-group {
+        ul {
+            list-style-type: none !important;
+        }
+    }
 }
 
 @media(max-width: 768px) {

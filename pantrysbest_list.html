@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PANTRY'S BEST 派悦坊</title>
+    <title>产品列表</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <!-- 可选的Bootstrap主题文件（一般不用引入） -->
@@ -16,30 +16,26 @@
 
 <body>
     <!--导航栏-->
-    <nav class="navbar navbar-default" role="navigation" style="margin-bottom:0px;">
-        <!-- Brand and toggle get grouped for better mobile display -->
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a href="#" class="navbar-brand">
-                    <span class="visible-xs pull-left" data-toggle="collapse" data-target=".navbar-ex1-collapse">未登录</span>
-                    <img class="img-responsive" alt="Christmas logo" src="https://www.pantrysbest.com/assets/christmas-logo-2eda8a4166a8d5485d880232238f461f.png">
-                    <span class="visible-xs pull-right" style="vertical-align:middle;font-size:29px;"><i class="fa fa-phone" style="margin-top:-5px;"></i></span>
-                </a>
+                <a class="navbar-brand" href="#"><img class="img-responsive" alt="Christmas logo" src="https://www.pantrysbest.com/assets/christmas-logo-2eda8a4166a8d5485d880232238f461f.png"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">当前城市：北京 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="hidden-sm">当前城市:</span>北京<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
                             <li><a href="#">上海</a></li>
                             <li><a href="#">杭州</a></li>
                             <li><a href="#">天津</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品列表 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品列表<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
                             <li><a href="#">圣诞精选</a></li>
                             <li><a href="#">迪士尼系列</a></li>
                             <li><a href="#">礼盒</a></li>
@@ -51,54 +47,187 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">寻找我们 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">寻找我们<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
                             <li><a href="#">门店</a></li>
                             <li><a href="#">配送须知</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a class="dropdown-toggle" href=" # ">活动</a></li>
-                    <li class="dropdown ">
-                        <a href="# " class="dropdown-toggle " data-toggle="dropdown ">关于 <b class="caret "></b></a>
-                        <ul class="dropdown-menu ">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">活动</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
                             <li><a href="# ">会员</a></li>
                             <li><a href="# ">我们</a></li>
                             <li><a href="# ">礼品卡</a></li>
                         </ul>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right ">
-                    <li><a class="dropdown-toggle" href="# ">登录</a></li>
-                    <li><a class="dropdown-toggle" href="# ">注册</a></li>
-                    <li><a class="dropdown-toggle" href="# "><i class="fa fa-shopping-cart "></i>&nbsp;购物车</a></li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">登陆</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart "></i><span class="hidden-sm">&nbsp;购物车</span></a></li>
                 </ul>
             </div>
-        </div>
-        <!-- /.navbar-collapse -->
+            <!-- /.navbar-collapse -->
     </nav>
-    <div class="container visible-xs">
-        <div class="col-xs-3 text-center">
-            <div class="row"><i class="fa fa-home"></i></div>
-            <div class="row">首页</div>
+    <!--小屏幕标签-->
+    <div class="container visible-xs" style="padding-left:0px;padding-right:0px;">
+        <div class="col-xs-2 text-center">
+            <div class="row"><a href="#"><i class="fa fa-arrow-left"></i>首页</a></div>
         </div>
-        <div class="col-xs-3 text-center">
-            <div class="row"><i class="fa fa-list-alt"></i></div>
-            <div class="row">产品列表</div>
+        <div class="col-xs-2 text-center">
+            <div class="row"><a href="#">蛋糕</a></div>
         </div>
-        <div class="col-xs-3 text-center">
-            <div class="row"><i class="fa fa-user"></i></div>
-            <div class="row">个人中心</div>
+        <div class="col-xs-2 text-center">
+            <div class="row"><a href="#">纸杯蛋糕</a></div>
         </div>
-        <div class="col-xs-3 text-center">
-            <div class="row"><i class="fa fa-shopping-cart"></i></div>
-            <div class="row">购物车</div>
+        <div class="col-xs-2 text-center">
+            <div class="row"><a href="#">迪士尼</a></div>
         </div>
+        <div class="col-xs-2 text-center">
+            <div class="row"><a href="#">更多>></a></div>
+        </div>
+    </div>
+    <!--左侧菜单栏-->
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a href="#">圣诞精选</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="#">惊叹树心蛋糕</a></li>
+                        <li><a href="#">惊叹雪人蛋糕</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a href="#">迪士尼系列</a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="#">小熊维尼原味重乳酪蛋糕</a></li>
+                        <li><a href="#">冰雪奇缘树心蛋糕</a></li>
+                        <li><a href="#">冰雪奇缘迷你纸杯蛋糕</a></li>
+                        <li><a href="#">冰雪奇缘树心蛋糕</a></li>
+                        <li><a href="#">小熊维尼纸杯蛋糕礼盒</a></li>
+                        <li><a href="#">疯狂动物城纸杯蛋糕礼盒</a></li>
+                        <li><a href="#">爱丽丝梦游仙境纸杯蛋糕</a></li>
+                        <li><a href="#">爱丽丝梦游仙境红丝绒</a></li>
+                        <li><a href="#">疯狂动物城大地女神蛋糕</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a href="#">礼盒</a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="#">迷你挞礼盒</a></li>
+                        <li><a href="#">迷你纸杯礼盒</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                    <a href="#">礼盒</a>
+                </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="#">迷你挞礼盒</a></li>
+                        <li><a href="#">迷你纸杯礼盒</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title">
+                    <a href="#">礼盒</a>
+                </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="#">迷你挞礼盒</a></li>
+                        <li><a href="#">迷你纸杯礼盒</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <div class="panel-heading" role="tab" id="headingSix">
+                <h4 class="panel-title">
+                    <a href="#">礼盒</a>
+                </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="#">迷你挞礼盒</a></li>
+                        <li><a href="#">迷你纸杯礼盒</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <div class="panel-heading" role="tab" id="headingSeven">
+                <h4 class="panel-title">
+                    <a href="#">礼盒</a>
+                </h4>
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="#">迷你挞礼盒</a></li>
+                        <li><a href="#">迷你纸杯礼盒</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            <div class="panel-heading" role="tab" id="headingEight">
+                <h4 class="panel-title">
+                    <a href="#">礼盒</a>
+                </h4>
+            </div>
+            <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="#">迷你挞礼盒</a></li>
+                        <li><a href="#">迷你纸杯礼盒</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </div>  
 
 
 
-      <script src="../node_modules/jquery/dist/jquery.js "></script>
+
+
+    <script src="../node_modules/jquery/dist/jquery.js "></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js "></script>
     <script src="pantrysbes_list.js "></script>
 </body>
