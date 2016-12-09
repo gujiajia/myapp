@@ -25,10 +25,26 @@ body {
         }
     }
     .panel-group {
-        ul {
-            list-style-type: none !important;
+        margin-top: 20px;
+        .panel-heading {
+            background: #390c20;
+            a {
+                color: #fff!important;
+            }
+        }
+        .panel-collapse {
+            border: none!important;
+            ul {
+                list-style-type: none!important;
+                padding: 0;
+                border-color: #fff;
+                a {
+                    color: #a7a7a7;
+                }
+            }
         }
     }
+    .Introduction {}
 }
 
 @media(max-width: 768px) {

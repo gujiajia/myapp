@@ -18,8 +18,20 @@ body {
       body .navbar-default .navbar-brand img {
         max-height: 26px;
         margin-top: -4px; }
-  body .panel-group ul {
-    list-style-type: none !important; }
+  body .panel-group {
+    margin-top: 20px; }
+    body .panel-group .panel-heading {
+      background: #390c20; }
+      body .panel-group .panel-heading a {
+        color: #fff !important; }
+    body .panel-group .panel-collapse {
+      border: none !important; }
+      body .panel-group .panel-collapse ul {
+        list-style-type: none !important;
+        padding: 0;
+        border-color: #fff; }
+        body .panel-group .panel-collapse ul a {
+          color: #a7a7a7; }
 
 @media (max-width: 768px) {
   .container {
